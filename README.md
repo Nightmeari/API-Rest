@@ -1,7 +1,10 @@
 # [PCD2] SIMULADO - AVALIAÇÃO PARCIAL 1
 
 ---
-**Este repositório _simula_ a AP1. Instruções, entrega do caderno de prova e conteúdos abordados estão aqui. Este é um exercício OPCIONAL, importante para a realização da prova.**
+**Este repositório _simula_ a AP1. Instruções, entrega do caderno de prova e conteúdos abordados estão aqui.** 
+
+**Este é um exercício OPCIONAL, importante para a realização da prova.**
+
 ---
 
 > 🙂 Dica: **chegue mais cedo e prepare o seu ambiente!**
