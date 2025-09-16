@@ -27,7 +27,7 @@ Antes de iniciar, você deve preparar o seu ambiente de desenvolvimento. Para is
 **Possível problema**: caso o terminal aponte _**Execução de scripts foi desabilitada neste sistema**_, execute esse comando no terminal:
 
 ```bash
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 e, logo após, tente executar `npm install` novamente.
