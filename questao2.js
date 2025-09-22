@@ -29,22 +29,17 @@ server.post('/filmes', (req, res) => {
     filmes.push(novoFilme);
     res.status(201).json(novoFilme);
   });
-  
-// (d) DELETE /filmes/:id - remove um filme pelo id
-server.delete('/filmes/:id', (req, res) => {
-    const id = parseInt(req.params.id);
-  
-    const index = filmes.findIndex(f => f.id === id);
-  
-    if (index === -1) {
-      return res.status(404).json({ erro: "Filme não encontrado" });
+ 
+// (d) PUT /filmes/:id - atualiza um filme pelo id
+server.push('/filmes/:id', (req, res) => {
+    const consulta = Number(req.params.id);
+    const filme = filmes.find((filme) => filme.id === consulta);
+    if (!filme) {
+      res.status(404).send("Filme não encontrado");
     }
-  
-    const removido = filmes.splice(index, 1);
-  
-    res.status(200).json(removido[0]);
-  });
-        
+    Object.assign(filme, req.body);
+    res.status(200).json(filme);
 
 // Caso queira, poderá alterar a porta
 server.listen(5001);
+  });
